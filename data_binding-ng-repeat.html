@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="public/javascripts/angular.min.js"></script>
+    <script src="public/javascripts/demo1.js"></script>
+</head>
+<body>
+    <!--<div ng-app="myApp">-->
+        <!--<ul ng-controller="ProductCtr">-->
+            <!--<li ng-repeat="p in products">-->
+                <!--{{p}}-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+    <div ng-app="myA">
+        <table ng-controller="ProductCtr" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr ng-repeat="p in product">
+                <td>{{p.name}}</td>
+                <td>{{p.price}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
